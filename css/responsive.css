@@ -1,0 +1,291 @@
+/* 
+ * CS Student Portfolio - Responsive Stylesheet
+ * Media queries for different screen sizes
+ */
+
+/* ===== Tablets (≤ 1024px) ===== */
+@media screen and (max-width: 1024px) {
+    /* General */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Home Page */
+    .hero-content {
+        padding: 0 var(--spacing-lg);
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.25rem;
+    }
+    
+    .profile-img-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .skills-container {
+        flex-direction: column;
+    }
+    
+    /* Projects Page */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    /* About Page */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-2xl);
+    }
+    
+    .about-image {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    /* Resume Page */
+    .resume-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    
+    .resume-date {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    /* Contact Page */
+    .contact-container {
+        flex-direction: column;
+        gap: var(--spacing-2xl);
+    }
+}
+
+/* ===== Large Mobile (≤ 768px) ===== */
+@media screen and (max-width: 768px) {
+    /* Header & Navigation */
+    #desktop-nav {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    #mobile-nav {
+        display: block;
+    }
+    
+    /* Home Page */
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 var(--spacing-md);
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .profile-img-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .project-card {
+        flex-direction: column;
+    }
+    
+    .project-card.featured {
+        flex-direction: column;
+    }
+    
+    .quick-link-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .social-links {
+        justify-content: center;
+        margin-top: var(--spacing-md);
+    }
+    
+    /* Projects Page */
+    .filter-container {
+        flex-wrap: wrap;
+    }
+    
+    .project-filters {
+        padding: var(--spacing-md) var(--spacing-md);
+    }
+    
+    .filter-btn {
+        font-size: var(--font-size-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    /* About Page */
+    .skills-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .interests-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    
+    .achievements-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Page */
+    .social-media-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ===== Small Mobile (≤ 480px) ===== */
+@media screen and (max-width: 480px) {
+    /* General */
+    section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .page-header {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    /* Home Page */
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .profile-img-container {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .project-card {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .tech-stack {
+        margin: var(--spacing-sm) 0;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+    }
+    
+    .project-links {
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+    }
+    
+    .quick-link-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects Page */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-md);
+        gap: var(--spacing-lg);
+    }
+    
+    /* About Page */
+    .profile-img-large {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about-container {
+        padding: var(--spacing-md);
+    }
+    
+    .interests-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Resume Page */
+    .download-btn {
+        width: 90%;
+    }
+    
+    .resume-container {
+        padding: var(--spacing-md);
+    }
+    
+    /* Contact Page */
+    .contact-container {
+        padding: var(--spacing-md);
+    }
+    
+    .contact-form-container {
+        padding: var(--spacing-md);
+    }
+    
+    .social-media-icons {
+        gap: var(--spacing-md);
+    }
+    
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-lg);
+    }
+}
