@@ -1,4 +1,4 @@
-# CS Student Portfolio Website
+# Nameesh's Portfolio Website
 
 A modern, responsive portfolio website template designed specifically for Computer Science students to showcase their skills, projects, and achievements.
 
